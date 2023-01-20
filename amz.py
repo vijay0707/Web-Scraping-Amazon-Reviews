@@ -7,7 +7,7 @@ class Reviews:
     def __init__(self, asin) -> None:
         self.asin = asin
         self.session = HTMLSession()
-        self.headers = {'User_Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
+        self.headers = {'User_Agent':'YOUR_USER_AGENT'}
         self.url = f'https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Monitoring/product-reviews/{self.asin}/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews&sortBy=recent&pageNumber='
 
     def pagination(self, page):
